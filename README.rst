@@ -12,7 +12,7 @@
 
 Для того, чтобы скачать это репо::
 
- sudo apt install git git-lfs
+ sudo apt install git
  git clone git@github.com:guardora-ai/server_creation.git
 
 
