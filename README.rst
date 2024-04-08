@@ -12,8 +12,8 @@
 
 Для того, чтобы скачать это репо::
 
-> sudo apt install git git-lfs
-> git clone git@github.com:guardora-ai/server_creation.git
+sudo apt install git git-lfs
+git clone git@github.com:guardora-ai/server_creation.git
 
 
 Установка cuda и драйверов:
@@ -21,11 +21,11 @@
 
 Выполнить следующее из ~::
 
-> bash ./server_creation/server_creation.sh
+bash ./server_creation/server_creation.sh
 
 После этого перегрузить сервер::
 
-> sudo reboot
+sudo reboot
 
 
 Установка рабочего пространства
@@ -33,7 +33,7 @@
 
 Для установки рабочего пространства для torch из ~ выполнить::
 
-> bash ./server_creation/torch_workspace.sh
+bash ./server_creation/torch_workspace.sh
 
 Для установки рабочего пространства для tensorflow из ~ выполнить::
 
