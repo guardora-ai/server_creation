@@ -12,8 +12,8 @@
 
 Для того, чтобы скачать это репо::
 
-sudo apt install git git-lfs
-git clone git@github.com:guardora-ai/server_creation.git
+ sudo apt install git git-lfs
+ git clone git@github.com:guardora-ai/server_creation.git
 
 
 Установка cuda и драйверов:
@@ -21,11 +21,11 @@ git clone git@github.com:guardora-ai/server_creation.git
 
 Выполнить следующее из ~::
 
-bash ./server_creation/server_creation.sh
+ bash ./server_creation/server_creation.sh
 
 После этого перегрузить сервер::
 
-sudo reboot
+ sudo reboot
 
 
 Установка рабочего пространства
@@ -33,11 +33,11 @@ sudo reboot
 
 Для установки рабочего пространства для torch из ~ выполнить::
 
-bash ./server_creation/torch_workspace.sh
+ bash ./server_creation/torch_workspace.sh
 
 Для установки рабочего пространства для tensorflow из ~ выполнить::
 
-> bash ./server_creation/tensorflow_workspace.sh
+ bash ./server_creation/tensorflow_workspace.sh
 
 
 Работа с окружением
@@ -45,11 +45,11 @@ bash ./server_creation/torch_workspace.sh
 
 Все пакеты установлены в окружении (venv) guardora. Для его активации выполнить::
 
-> source ~/guardora/bin/activate
+ source ~/guardora/bin/activate
 
 Для выхода из окружения выполнить::
 
-> deactivate
+ deactivate
 
 
 Как запускать длительные задачи с помощью screen
@@ -57,7 +57,7 @@ bash ./server_creation/torch_workspace.sh
 
 Создается отдельный именованный (в примере имя - my_super_long_task) сеанс screen::
 
-> screen -S my_super_long_task
+ screen -S my_super_long_task
 
 Система переходит как бы в отдельный сеанс, который будет продолжать работать даже, если вы выйдете с сервера.
 
@@ -65,7 +65,7 @@ bash ./server_creation/torch_workspace.sh
 
 Чтобы вновь подключиться к сеансу::
 
-> screen -r -x my_super_long_task
+ screen -r -x my_super_long_task
 
 
 Как запустить tensorboard, чтобы удаленно смотреть результаты
@@ -73,7 +73,7 @@ bash ./server_creation/torch_workspace.sh
 
 Запускаете сеанс screen и запускаете tensorboard следующим образом (порт здесь 7777, а можно любой незанятый, logdir - то, где ваши результаты)::
 
-> tensorboard --bind_all --port 7777 --logdir /home/ubuntu/my/path/to/data serve
+ tensorboard --bind_all --port 7777 --logdir /home/ubuntu/my/path/to/data serve
 
 После этого с любого компьютера http://server-ip-address:7777/
 
