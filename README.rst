@@ -13,7 +13,8 @@
 Для того, чтобы скачать это репо::
 
  sudo apt install git
- git clone git@github.com:guardora-ai/server_creation.git
+ 
+ git clone https://github.com/guardora-ai/server_creation.git
 
 
 Установка cuda и драйверов:
