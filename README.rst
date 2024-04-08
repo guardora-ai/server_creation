@@ -13,7 +13,7 @@
 Для того, чтобы скачать это репо::
 
  sudo apt install git
- 
+
  git clone https://github.com/guardora-ai/server_creation.git
 
 
@@ -22,7 +22,7 @@
 
 Выполнить следующее из ~::
 
- bash ./server_creation/server_creation.sh
+ bash ./server_creation/create_server.sh
 
 После этого перегрузить сервер::
 
